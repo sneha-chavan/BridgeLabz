@@ -15,6 +15,7 @@ public class App
 	    LOG.warn("this changes done only from github");
 //>>>>>>> d702b729eacba606feaf324d47338a8dd6da6a17
 	    //I am changing this file by inserting this output
+	    System.out.println("from main branch");
 		System.out.println("add from github");
 	    String message = "Gello";
         System.out.println( "Hello World!" );
