@@ -28,5 +28,28 @@ public class App
         LOG.warn("Warning Warning!!!");
         //LOG.always();
         
+        double x1=9,x2=8,y1=7,y2=4;
+        double x = x2-x1;
+        double y=y2-y1;
+        double xx=Math.pow(x, 2);
+        double yy=Math.pow(y, 2);
+        double lengthXY= Math.sqrt(xx+yy);
+        double a1=10,a2=18,b1=3,b2=14;
+        double a = a2-a1;
+        double b=b2-b1;
+        double aa=Math.pow(a, 2);
+        double bb=Math.pow(b, 2);
+        double lengthAB= Math.sqrt(aa+bb);
+        System.out.println("length of line XY "+lengthXY+" length of line AB"  +lengthAB);
+        if ( lengthAB > lengthXY) {
+        	System.out.println("lengthAB is greater than lengthXY");
+        }
+        else if (lengthAB < lengthXY ) {
+        	System.out.println("lengthAB is smaller than lengthXY");
+        }
+        else {
+        	System.out.println("both are equal");
+        }
+        
     }
 }
