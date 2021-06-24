@@ -10,10 +10,13 @@ public class App
 	private static final Logger LOG= LogManager.getLogger(App.class);
     public static void main( String[] args )
     {
+//<<<<<<< HEAD
     	LOG.warn("Warning due to changes in Local Only");
-    	//I am changing this file by inserting this output
-    	System.out.println("add from github");
-    	String message = "Gello";
+	    LOG.warn("this changes done only from github");
+//>>>>>>> d702b729eacba606feaf324d47338a8dd6da6a17
+	    //I am changing this file by inserting this output
+		System.out.println("add from github");
+	    String message = "Gello";
         System.out.println( "Hello World!" );
         LOG.debug("it will debug");
         LOG.error("Error printed");
