@@ -10,8 +10,9 @@ public class App
 	private static final Logger LOG= LogManager.getLogger(App.class);
     public static void main( String[] args )
     {
-	 //I am changing this file by inserting this output
-	System.out.println("add from github");
+    	LOG.warn("Warning due to changes in Local Only");
+    	//I am changing this file by inserting this output
+    	System.out.println("add from github");
     	String message = "Gello";
         System.out.println( "Hello World!" );
         LOG.debug("it will debug");
