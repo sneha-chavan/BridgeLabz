@@ -10,6 +10,7 @@ public class App
 	private static final Logger LOG= LogManager.getLogger(App.class);
     public static void main( String[] args )
     {
+	    LOG.warn("this changes done only from github");
 	 //I am changing this file by inserting this output
 	System.out.println("add from github");
     	String message = "Gello";
