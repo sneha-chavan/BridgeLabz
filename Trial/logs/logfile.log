@@ -1,0 +1,16 @@
+ERROR | 2021-06-22 22:56:49 | [main] trial.App (App.java:16) - Error printed
+INFO  | 2021-06-22 22:56:49 | [main] trial.App (App.java:17) - This gives us information
+WARN  | 2021-06-22 22:56:49 | [main] trial.App (App.java:18) - Warning Warning!!!
+ERROR | 2021-06-22 22:58:07 | [main] trial.App (App.java:16) - Error printed
+INFO  | 2021-06-22 22:58:07 | [main] trial.App (App.java:17) - This gives us information
+WARN  | 2021-06-22 22:58:07 | [main] trial.App (App.java:18) - Warning Warning!!!
+ERROR | 2021-06-22 22:58:26 | [main] trial.App (App.java:16) - Error printed
+INFO  | 2021-06-22 22:58:26 | [main] trial.App (App.java:17) - This gives us information
+WARN  | 2021-06-22 22:58:26 | [main] trial.App (App.java:18) - Warning Warning!!!
+ERROR | 2021-06-22 22:58:29 | [main] trial.App (App.java:16) - Error printed
+INFO  | 2021-06-22 22:58:29 | [main] trial.App (App.java:17) - This gives us information
+WARN  | 2021-06-22 22:58:29 | [main] trial.App (App.java:18) - Warning Warning!!!
+DEBUG | 2021-06-22 23:00:39 | [main] trial.App (App.java:15) - it will debug
+ERROR | 2021-06-22 23:00:39 | [main] trial.App (App.java:16) - Error printed
+INFO  | 2021-06-22 23:00:39 | [main] trial.App (App.java:17) - This gives us information
+WARN  | 2021-06-22 23:00:39 | [main] trial.App (App.java:18) - Warning Warning!!!
