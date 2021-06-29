@@ -27,7 +27,17 @@ public class LineComparison {
 		}
 		return false;
 	}
-
+	public static void lineCompare(Integer lineOne, Integer lineTwo) {
+		int result = Integer.compare(lineOne, lineTwo);
+		if (result>0) {
+			System.out.println("LineXY is greater");
+		}
+		else if (result<0) {
+			System.out.println("LineAB is greater");
+		}
+		else System.out.println("Both lines are equals");
+	}
+	
 	public static void main(String[] args) {
 		System.out.println("Welcome to Line Computation Program");
 		LineComparison lineXY = new LineComparison(2, 2, 5, 4);
@@ -40,8 +50,9 @@ public class LineComparison {
 			System.out.println("Both lines are euqal with length: "+ lengthAB);
 		}
 		else {
-			System.out.println("Lines having different lengths");
+			System.out.println("Both lines having different lengths");
 		}
+		lineCompare(lengthAB, lengthXY);
 	}
 
 }
