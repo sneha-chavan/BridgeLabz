@@ -9,12 +9,9 @@ import junit.framework.Assert;
 
 public class MaxIntTest {
 	MaxInt<Integer> maxInt;
-	Integer x;
-	Integer y;
-	Integer z;
-	String a="girls";
-	String s="boys";
-	String d="defaulter";
+	Integer x,y,z;
+	String a,s,d;
+	Float r,f,v;
 	
 
 	@Before
@@ -80,5 +77,35 @@ public class MaxIntTest {
 		Assert.assertEquals(d, maxInt.maximum(a,s,d));
 	}
 
+	//For testing Float Type Data in common Generic 
+	
+	@SuppressWarnings({ "static-access", "deprecation" })
+	@Test
+	public void testFirstFloatElementMax() {
+		r=0.6f;
+		f=0.4f;
+		v=0.2f;
+		Assert.assertEquals(r, maxInt.maximum(r,f,v));
+	}
+	
+	@SuppressWarnings({ "static-access", "deprecation" })
+	@Test
+	public void testSecondFloatElementMax() {
+		r=0.6f;
+		f=5.4f;
+		v=3.2f;
+		Assert.assertEquals(f, maxInt.maximum(r,f,v));
+	}
+	
+	@SuppressWarnings({ "static-access", "deprecation" })
+	@Test
+	public void testThirdFloatElementMax() {
+		r=0.6f;
+		f=2.4f;
+		v=7.2f;
+		Assert.assertEquals(v, maxInt.maximum(r,f,v));
+	}
+
+	
 
 }
