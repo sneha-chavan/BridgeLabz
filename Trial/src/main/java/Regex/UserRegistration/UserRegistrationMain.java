@@ -5,12 +5,8 @@ public class UserRegistrationMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		UserRegistration newUser = new UserRegistrationImp();
-		
-		newUser.firstName();
-		newUser.lastName();
-		newUser.emailId();
-		newUser.mobileNo();
-		newUser.password();
+		System.out.println(newUser.firstNameValidate("Sneha"));
+		System.out.println(newUser.lastNameValidate("Chavan"));
 		
 	}
 

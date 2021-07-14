@@ -1,10 +1,10 @@
 package Regex.UserRegistration;
 
 public interface UserRegistration {
-	void firstName();
-	void lastName();
-	void emailId();
-	void mobileNo();
-	void password();
+	public boolean firstNameValidate(String fName);
+    public boolean lastNameValidate(String lName);
+    public boolean emailValidate(String email);
+	public boolean  mobileNo(String number);
+	public boolean  password(String pwd);
 
 }
