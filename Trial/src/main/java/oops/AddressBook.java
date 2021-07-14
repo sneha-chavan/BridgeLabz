@@ -1,17 +1,25 @@
 package oops;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 import java.util.Scanner;
 
+import javax.print.attribute.HashAttributeSet;
+
 public class AddressBook {
+	//static Map<String, AddressBook> addBooks = new HashMap<String, AddressBook>();
+	int count =1;
 	static Scanner sc = new Scanner(System.in);
 	ArrayList<Contact> contact;
 	
 	public AddressBook() {
 		contact = new ArrayList<>();
 	}
-	
+	public void createNewAddressBook() {
+		
+	}
 	
 	
 	private void addContact(String firstName, String lastName, String address, String city, String state, int zip,
@@ -21,17 +29,17 @@ public class AddressBook {
 	
 	private void addMultipleContacts() {
 		String more;
-		do {
+		while (true) {
 			System.out.println("First Name: ");
-			String fName=sc.nextLine();
+			String fName=sc.next();
 			System.out.println("Last Name: ");
-			String lName=sc.nextLine();
+			String lName=sc.next();
 			System.out.println("Address: ");
-			String address=sc.nextLine();
+			String address=sc.next();
 			System.out.println("City: ");
-			String city=sc.nextLine();
+			String city=sc.next();
 			System.out.println("State: ");
-			String state=sc.nextLine();
+			String state=sc.next();
 			System.out.println("zip: ");
 			int zip=sc.nextInt();
 			System.out.println("6 digit phone number: ");
@@ -41,10 +49,10 @@ public class AddressBook {
 			
 			System.out.println("add one more? Y or N: ");
 			more=sc.nextLine();
-			if (more == "NO" || more == "N") {
+			if (more.contains("N") || more.contains("n")) {
 				break;
 			}
-		}while(more == "Y" || more == "YES");
+		}
 		
 	}
 	
@@ -112,7 +120,9 @@ public class AddressBook {
 
 
 	public static void main(String[] args) {
+		
 		AddressBook addressBook = new AddressBook();
+		//addBooks.put(addressBook);
 		addressBook.addContact("Sneha", "Chavan", "Ghatkopar", "Mumbai", "Maharashtra", 400084, 986767);
 		addressBook.addContact("Jagruti", "Khichi", "Lalbaugh", "Mumbai", "Maharashtra", 400001, 8451829);
 		addressBook.displayContacts();
