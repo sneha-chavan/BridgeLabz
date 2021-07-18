@@ -1,12 +1,8 @@
 package oops;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Map;
 import java.util.Scanner;
-
-import javax.print.attribute.HashAttributeSet;
 
 public class AddressBook {
 	//static Map<String, AddressBook> addBooks = new HashMap<String, AddressBook>();

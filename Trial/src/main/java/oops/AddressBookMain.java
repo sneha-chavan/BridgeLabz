@@ -24,7 +24,7 @@ public class AddressBookMain {
 				sc.nextLine();
 				addressBookMap.put(bookName, new AddressBookOperation());// adding bookname as a key and vlue is allocating
 																// memory for addressbook obj
-				addressBook.addressBookOptions(addressBookMap.get(bookName));// call addressbookoption method with
+				AddressBookOperation.addressBookOptions(addressBookMap.get(bookName));// call addressbookoption method with
 																				// passing key of hashmap
 				break;
 			case 2:
@@ -37,7 +37,7 @@ public class AddressBookMain {
 				System.out.println("Enter Address Book name you want to Open : ");
 				String name = sc.nextLine();
 				System.out.println("Current Address Book is : " + name);
-				addressBook.addressBookOptions(addressBookMap.get(name));// call method with passing address book name
+				AddressBookOperation.addressBookOptions(addressBookMap.get(name));// call method with passing address book name
 				break;
 			case 3:
 				System.out.println("Enter Address Book name to be delete: ");
